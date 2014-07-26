@@ -1,0 +1,33 @@
+.btns li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.btns {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	width: 200px;
+}
+body {
+	font-family: arial, sans-serif;
+	color: #555;
+	margin: 0px;
+	background-color: #FDFDFD;
+}
+
+.btns li a {
+	padding-right: 5px;
+	padding-left: 5px;
+	line-height: 40px;
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+.btns li a img {
+	display: inline-block;
+}
+
+.btns li a:hover {
+	background-color: #CCC;
+}

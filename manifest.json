@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name" : "Google Docs Quick Create",
+  "version": "0.1.2",
+  "description": "Create new Documents for Google Drive from your browser bar.",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {"48": "drive_icon.png"}
+}
