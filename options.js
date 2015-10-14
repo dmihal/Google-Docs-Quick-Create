@@ -23,4 +23,13 @@
     });
   };
   domain_field.addEventListener('blur', form_changed_event);
+
+  // Prefill form values
+  chrome.storage.sync.get('apps_domain', function(values){
+    if (values.apps_domain){
+      apps_radio.checked = true;
+      domain_field.disabled = false;
+      domain_field.value = values.apps_domain;
+    }
+  });
 })();
