@@ -11,7 +11,7 @@
     if (values.apps_domain){
       for (var link_id in apps_urls){
         var url = apps_urls[link_id].replace("??", values.apps_domain);
-        document.getElementById(link_id).firstChild.href = url;
+        document.getElementById(link_id).firstElementChild.href = url;
       }
     }
   });
