@@ -17,12 +17,13 @@
 
   // Set up event listener to store domain
   var form_changed_event = function(){
-    var domain = apps_radio.checked ? domain_field.value : null;
+    var isApps = apps_radio.checked && domain_field.validity.valid;
+    var domain = isApps ? domain_field.value : null;
     chrome.storage.sync.set({'apps_domain': domain}, function() {
       // Settings saved
     });
   };
-  domain_field.addEventListener('blur', form_changed_event);
+  domain_field.addEventListener('change', form_changed_event);
 
   // Prefill form values
   chrome.storage.sync.get('apps_domain', function(values){
