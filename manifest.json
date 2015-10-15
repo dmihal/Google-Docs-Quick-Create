@@ -7,5 +7,9 @@
     "default_popup": "index.html",
     "default_icon": "icon.png"
   },
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
   "icons": {"48": "drive_icon.png"}
 }
