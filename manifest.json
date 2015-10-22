@@ -10,6 +10,7 @@
   "permissions": [
     "storage"
   ],
+  "content_security_policy": "script-src 'self' https://storage.googleapis.com; object-src 'self'",
   "options_page": "options.html",
   "icons": {"48": "drive_icon.png"}
 }
