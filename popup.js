@@ -15,4 +15,9 @@
       }
     }
   });
+
+  for (var link_id in apps_urls) {
+    var localLabel = chrome.i18n.getMessage("new_" + link_id);
+    document.querySelector(`#${link_id} .label`).innerText = localLabel;
+  }
 })();
