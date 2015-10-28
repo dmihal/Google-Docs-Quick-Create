@@ -1,0 +1,17 @@
+{
+  "new_doc": {
+    "message": "New Document"
+  },
+  "new_sheet": {
+    "message": "New Spreadsheet"
+  },
+  "new_prez": {
+    "message": "New Presentation"
+  },
+  "new_draw": {
+    "message": "New Drawing"
+  },
+  "new_form": {
+    "message": "New Form"
+  }
+}

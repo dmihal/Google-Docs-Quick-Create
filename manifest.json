@@ -3,6 +3,8 @@
   "name" : "Google Docs Quick Create",
   "version": "0.1.3",
   "description": "Create new Documents for Google Drive from your browser bar.",
+  "default_locale": "en",
+
   "browser_action": {
     "default_popup": "index.html",
     "default_icon": "icon.png"
