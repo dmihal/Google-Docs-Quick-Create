@@ -1,4 +1,10 @@
 {
+  "title": {
+    "message": "Google Docs Quick Create"
+  },
+  "description": {
+    "message": "Create new Documents for Google Drive from your browser bar."
+  },
   "new_doc": {
     "message": "New Document"
   },
