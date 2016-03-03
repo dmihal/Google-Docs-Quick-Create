@@ -1,0 +1,17 @@
+{
+  "new_doc": {
+    "message": "Nuevo Documento"
+  },
+  "new_sheet": {
+    "message": "Nueva Hoja de Cálculo"
+  },
+  "new_prez": {
+    "message": "Nueva Presentación"
+  },
+  "new_draw": {
+    "message": "Nuevo Dibujo"
+  },
+  "new_form": {
+    "message": "Nuevo Formulario"
+  }
+}
