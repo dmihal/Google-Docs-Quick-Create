@@ -13,6 +13,7 @@
         var url = apps_urls[link_id].replace("??", values.apps_domain);
         document.getElementById(link_id).firstElementChild.href = url;
       }
+      document.getElementById('status').innerText = `Using the ${values.apps_domain} domain`;
     }
   });
 })();

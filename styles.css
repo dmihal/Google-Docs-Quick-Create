@@ -31,3 +31,9 @@ body {
 .btns li a:hover {
 	background-color: #CCC;
 }
+
+#status {
+	background: #F5F5F5;
+	text-align: center;
+	padding: 5px;
+}
