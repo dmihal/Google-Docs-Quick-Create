@@ -1,0 +1,23 @@
+{
+  "title": {
+    "message": "Google Документы Быстрое создание"
+  },
+  "description": {
+    "message": "Create new Documents for Google Drive from your browser bar."
+  },
+  "new_doc": {
+    "message": "Создать документ"
+  },
+  "new_sheet": {
+    "message": "Создать таблицу"
+  },
+  "new_prez": {
+    "message": "Новая презентация"
+  },
+  "new_draw": {
+    "message": "Новый рисунок"
+  },
+  "new_form": {
+    "message": "Новая Форма"
+  }
+}
