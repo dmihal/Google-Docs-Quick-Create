@@ -1,0 +1,17 @@
+:root {
+  font-size: 20px;
+}
+
+body {
+  padding-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.35rem;
+}
+
+label > input[type=radio] {
+  position: relative;
+  top: -0.1rem;
+}

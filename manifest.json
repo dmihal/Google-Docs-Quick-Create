@@ -12,7 +12,10 @@
   "permissions": [
     "storage"
   ],
-  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "icons": {
     "128": "icons/suite_128.png",
     "48": "icons/suite_48.png",
