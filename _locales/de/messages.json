@@ -1,0 +1,23 @@
+{
+  "title": {
+    "message": "Google Docs Quick Create"
+  },
+  "description": {
+    "message": "Erstelle neue Google Drive Dokumente direkt aus der Browser Leiste."
+  },
+  "new_doc": {
+    "message": "Neues Dokument"
+  },
+  "new_sheet": {
+    "message": "Neue Tabelle"
+  },
+  "new_prez": {
+    "message": "Neue Präsentation"
+  },
+  "new_draw": {
+    "message": "Neue Zeichnung"
+  },
+  "new_form": {
+    "message": "Neues Formular"
+  }
+}
