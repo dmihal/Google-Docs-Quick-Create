@@ -21,5 +21,15 @@
     "48": "icons/suite_48.png",
     "19": "icons/suite_19.png",
     "16": "icons/suite_16.png"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+D",
+        "mac": "Alt+D",
+        "chromeos": "Alt+D",
+        "linux": "Alt+D"
+      }
+    }
   }
 }
