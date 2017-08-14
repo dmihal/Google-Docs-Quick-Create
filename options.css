@@ -3,15 +3,30 @@
 }
 
 body {
-  padding-bottom: 1.5rem;
+  
+}
+
+section {
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  margin-bottom: 0.8em;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 label {
   display: block;
-  margin: 1rem 0 0.35rem;
+  margin: 0.5rem 0 0.3rem;
 }
 
 label > input[type=radio] {
   position: relative;
   top: -0.1rem;
+}
+
+input:not([type=radio]) {
+  display: inline-block;
+  margin-top: 0.4rem;
 }

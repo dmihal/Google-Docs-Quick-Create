@@ -7,21 +7,27 @@
 </head>
 
 <body>
-  <div>
+  <section id="account-type">
+    <h2>Account Type</h2>
     <label>
       <input type="radio" name="acct_type" value="standard" checked>
       Standard Google account
     </label>
-  </div>
-  <div>
     <label>
       <input type="radio" name="acct_type" value="apps">
       G Suite Account (corporate, educational)
+      <div>
+        <input name="domain" id="gsuite_domain" placeholder="G Suite domain" pattern="[\w-\.]+" disabled>
+      </div>
     </label>
-    <div>
-      <input name="domain" id="gsuite_domain" placeholder="G Suite domain" pattern="[\w-\.]+" disabled>
-    </div>
-  </div>
+  </section>
+  <section id="account-num">
+    <h2>Number of Accounts</h2>
+    <label>
+      If you often switch between Google accounts, set your total number of accounts here:&nbsp;
+      <input type="number" id="acct_count" name="acct_count" value="1" min="1" max="6">
+    </label>
+  </section>
 
   <script src="options.js"></script>
 </body>
