@@ -52,6 +52,9 @@ function update_links() {
     `
   })
   links_wrap.innerHTML = links
+
+  // Update the Google Drive link
+  document.querySelector('#drive_link').href = `https://drive.google.com${url_acct}/`
 }
 
 /**
@@ -113,7 +116,7 @@ chrome.storage.sync.get(defaults, (items) => {
 
   // Create initial link UI
   update_links()
-  
+
   enable_hotkeys()
 
   // If the user has more than one account, enable account selection
@@ -121,5 +124,5 @@ chrome.storage.sync.get(defaults, (items) => {
     enable_acct_select()
   // If the user specified a G Suite domain, show it in the status box
   if (options.apps_domain)
-    document.querySelector('#status').innerText = `G Suite: ${options.apps_domain}`;
+    document.querySelector('#drive_link label').innerText = `G Suite: ${options.apps_domain}`;
 })

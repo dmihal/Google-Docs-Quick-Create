@@ -9,6 +9,11 @@ body {
 	background-color: #FDFDFD;
 }
 
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
 #acct_select {
 	display: flex;
 	background: #eee;
@@ -62,10 +67,8 @@ body {
 	font-size: 14px;
 	line-height: 40px;
 	color: #333;
-	text-decoration: none;
 	text-transform: capitalize;
 	letter-spacing: 0.03em;
-	outline: 0;
 }
 
 #links a:hover {
@@ -84,9 +87,32 @@ body {
 	cursor: pointer;
 }
 
-#status {
+footer {
 	background: #eee;
-	text-align: center;
-	padding: 0 5px;
-	line-height: 25px;
+}
+
+#drive_link {
+	text-align: left;
+	position: relative;
+	display: block;
+	padding: 6px 25px 5px 7px;
+	color: #333;
+	font-weight: 400;
+	opacity: 0.7;
+	letter-spacing: 0.03em;
+}
+
+#drive_link:hover {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+#drive_link label {
+	cursor: pointer;
+}
+
+#drive_icon {
+	position: absolute;
+	right: 7px;
+	bottom: 4px;
 }
