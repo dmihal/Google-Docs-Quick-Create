@@ -44,7 +44,7 @@ function update_links() {
     // Create link UI
     links += `
       <li>
-        <a href="${url}" target="_blank">
+        <a href="${url}" target="_blank" data-doc-type="${doc_type}">
           <img src="${doc_type}-32.png" width="32" height="32">
           <label>${label}</label>
         </a>
@@ -52,6 +52,27 @@ function update_links() {
     `
   })
   links_wrap.innerHTML = links
+}
+
+/**
+ * Allows pressing num keys to switch account
+ * Allows pressing letters to create new docs (D for document, F for form, etc.)
+ */
+function enable_hotkeys() {
+  document.addEventListener('keydown', (e) => {
+    let key = String.fromCharCode(e.which),
+        int = parseInt(key)
+
+    // Click user account button matching number pressed
+    if (options.acct_count > 1 && int && int >= 1 && int <= options.acct_count)
+      acct_select.querySelector(`button:nth-child(${int})`).click()
+
+    // Click link matching letter pressed
+    if ( 'D S P A F'.includes(key) ) {
+      let selector = (key === 'A' ? '[data-doc-type=drawing]' : `[data-doc-type^=${key.toLowerCase()}]`)
+      links_wrap.querySelector(selector).click()
+    }
+  })
 }
 
 /**
@@ -92,6 +113,8 @@ chrome.storage.sync.get(defaults, (items) => {
 
   // Create initial link UI
   update_links()
+  
+  enable_hotkeys()
 
   // If the user has more than one account, enable account selection
   if (options.acct_count > 1)
