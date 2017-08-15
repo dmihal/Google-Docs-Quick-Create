@@ -30,6 +30,7 @@ a {
 	font-weight: 600;
 	color: var(--content);
 	opacity: 0.5;
+	outline: 0;
 }
 
 #acct_select button:hover,
