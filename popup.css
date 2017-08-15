@@ -1,5 +1,7 @@
 :root {
-	--offwhite: #f1f1f1;
+	--offwhite: #efefef;
+	--offwhite-2: #eee;
+	--content: #333;
 }
 
 body {
@@ -16,7 +18,7 @@ a {
 
 #acct_select {
 	display: flex;
-	background: #eee;
+	background: var(--offwhite-2);
 }
 
 #acct_select button {
@@ -24,10 +26,9 @@ a {
 	border-radius: 0;
 	background: transparent;
 	border: none;
-	outline: 0;
 	cursor: pointer;
 	font-weight: 600;
-	color: #333;
+	color: var(--content);
 	opacity: 0.5;
 }
 
@@ -66,7 +67,7 @@ a {
 	padding: 3px 5px;
 	font-size: 14px;
 	line-height: 40px;
-	color: #333;
+	color: var(--content);
 	text-transform: capitalize;
 	letter-spacing: 0.03em;
 }
@@ -74,6 +75,10 @@ a {
 #links a:hover {
 	background-color: #f5f5f5;
 	color: #000;
+}
+
+#links a:focus {
+	background-color: #f1f1f1;
 }
 
 #links img {
@@ -88,7 +93,7 @@ a {
 }
 
 footer {
-	background: #eee;
+	background: var(--offwhite-2);
 }
 
 #drive_link {
@@ -96,7 +101,7 @@ footer {
 	position: relative;
 	display: block;
 	padding: 6px 25px 5px 7px;
-	color: #333;
+	color: var(--content);
 	font-weight: 400;
 	opacity: 0.7;
 	letter-spacing: 0.03em;

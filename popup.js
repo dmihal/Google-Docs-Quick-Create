@@ -52,6 +52,8 @@ function update_links() {
     `
   })
   links_wrap.innerHTML = links
+  // Focus first link
+  links_wrap.querySelector('li:first-child a').focus()
 
   // Update the Google Drive link
   document.querySelector('#drive_link').href = `https://drive.google.com${url_acct}/`
@@ -75,6 +77,12 @@ function enable_hotkeys() {
       let selector = (key === 'A' ? '[data-doc-type=drawing]' : `[data-doc-type^=${key.toLowerCase()}]`)
       links_wrap.querySelector(selector).click()
     }
+
+    // Move up/down links with arrow keys
+    if (e.which === 38) // Up arrow
+      links_wrap.querySelector('a:focus').parentElement.previousElementSibling.firstElementChild.focus()
+    else if (e.which === 40) // Down arrow
+      links_wrap.querySelector('a:focus').parentElement.nextElementSibling.firstElementChild.focus()
   })
 }
 
@@ -99,7 +107,7 @@ function enable_acct_select() {
   let accts_html = ''
   for (let i = 0; i < options.acct_count; i++) {
     let active = (i === options.acct_selected ? 'active' : '')
-    accts_html += `<button class="${active}">${i + 1}</button>`
+    accts_html += `<button class="${active}" tabindex="-1">${i + 1}</button>`
   }
   acct_select.innerHTML = accts_html
 
