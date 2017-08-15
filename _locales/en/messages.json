@@ -5,16 +5,16 @@
   "description": {
     "message": "Create new Documents for Google Drive from your browser bar."
   },
-  "new_doc": {
+  "new_document": {
     "message": "New Document"
   },
-  "new_sheet": {
+  "new_spreadsheet": {
     "message": "New Spreadsheet"
   },
-  "new_prez": {
+  "new_presentation": {
     "message": "New Presentation"
   },
-  "new_draw": {
+  "new_drawing": {
     "message": "New Drawing"
   },
   "new_form": {

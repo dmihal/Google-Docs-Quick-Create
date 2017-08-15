@@ -1,0 +1,124 @@
+:root {
+	--offwhite: #efefef;
+	--offwhite-2: #eee;
+	--content: #333;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	color: #555;
+	margin: 0px;
+	background-color: #FDFDFD;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+#acct_select {
+	display: flex;
+	background: var(--offwhite-2);
+}
+
+#acct_select button {
+	flex-grow: 1;
+	border-radius: 0;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--content);
+	opacity: 0.5;
+	outline: 0;
+}
+
+#acct_select button:hover,
+#acct_select button.active {
+	background: #fff;
+}
+
+#acct_select button:hover {
+	opacity: 0.5;
+}
+
+#acct_select button.active {
+	opacity: 1;
+}
+
+#links {
+	display: block;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+#links li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#links li:not(:last-of-type) {
+	border-bottom: 1px solid var(--offwhite);
+}
+
+#links a {
+	display: block;
+	padding: 3px 5px;
+	font-size: 14px;
+	line-height: 40px;
+	color: var(--content);
+	text-transform: capitalize;
+	letter-spacing: 0.03em;
+}
+
+#links a:hover {
+	background-color: #f5f5f5;
+	color: #000;
+}
+
+#links a:focus {
+	background-color: #f1f1f1;
+}
+
+#links img {
+	float: left;
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+
+#links label {
+	cursor: pointer;
+}
+
+footer {
+	background: var(--offwhite-2);
+}
+
+#drive_link {
+	text-align: left;
+	position: relative;
+	display: block;
+	padding: 6px 25px 5px 7px;
+	color: var(--content);
+	font-weight: 400;
+	opacity: 0.7;
+	letter-spacing: 0.03em;
+}
+
+#drive_link:hover {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+#drive_link label {
+	cursor: pointer;
+}
+
+#drive_icon {
+	position: absolute;
+	right: 7px;
+	bottom: 4px;
+}

@@ -1,24 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Google Docs Quick Create Settings</title>
-  </head>
-  <body>
-    <div>
-      <label>
-        <input type="radio" name="acct_type" value="standard" checked/>
-        Standard Google Account
-      </label>
-    </div>
-    <div>
-      <label>
-        <input type="radio" name="acct_type" value="apps"/>
-        Google Apps Account (corporate, educational)
-      </label>
+<head>
+  <title>Google Docs Quick Create Options</title>
+
+  <link href="options.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <section id="account-type">
+    <h2>Account Type</h2>
+    <label>
+      <input type="radio" name="acct_type" value="standard" checked>
+      Standard Google account
+    </label>
+    <label>
+      <input type="radio" name="acct_type" value="apps">
+      G Suite Account (corporate, educational)
       <div>
-        <input name="domain" id="txt_domain" placeholder="Google Apps Domain" pattern="[\w-\.]+" disabled/>
+        <input name="domain" id="gsuite_domain" placeholder="G Suite domain" pattern="[\w-\.]+" disabled>
       </div>
-    </div>
-    <script src="options.js"></script>
-  </body>
+    </label>
+  </section>
+  <section id="account-num">
+    <h2>Number of Accounts</h2>
+    <label>
+      If you often switch between Google accounts, set your total number of accounts here:&nbsp;
+      <input type="number" id="acct_count" name="acct_count" value="1" min="1" max="6">
+    </label>
+  </section>
+
+  <script src="options.js"></script>
+</body>
 </html>

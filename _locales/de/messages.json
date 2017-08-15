@@ -5,16 +5,16 @@
   "description": {
     "message": "Erstelle neue Google Drive Dokumente direkt aus der Browser Leiste."
   },
-  "new_doc": {
+  "new_document": {
     "message": "Neues Dokument"
   },
-  "new_sheet": {
+  "new_spreadsheet": {
     "message": "Neue Tabelle"
   },
-  "new_prez": {
+  "new_presentation": {
     "message": "Neue Präsentation"
   },
-  "new_draw": {
+  "new_drawing": {
     "message": "Neue Zeichnung"
   },
   "new_form": {
