@@ -12,7 +12,9 @@
   "permissions": [
     "storage"
   ],
-  "options_page": "options.html",
+  "options_ui": {
+    "page" : "options.html"
+  },
   "icons": {
     "128": "icons/suite_128.png",
     "48": "icons/suite_48.png",
