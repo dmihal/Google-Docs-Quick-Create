@@ -1,16 +1,26 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name" : "__MSG_title__",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "__MSG_description__",
   "default_locale": "en",
 
-  "browser_action": {
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src 'self'; connect-src 'self' https://www.google-analytics.com"
+  },
+
+  "action": {
     "default_popup": "index.html",
-    "default_icon": "icons/suite_38.png"
+    "default_icon": {
+      "16": "icons/suite_16.png",
+      "48": "icons/suite_48.png"
+    }
   },
   "permissions": [
     "storage"
+  ],
+  "host_permissions": [
+    "https://www.google-analytics.com/"
   ],
   "options_page": "options.html",
   "icons": {
